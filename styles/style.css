@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 30px 0;
+  }
+  @keyframes lights {
+    0% {
+      color: red;
+      box-shadow: 0 5px 15px red;
+    }
+    25% {
+      color: goldenrod;
+      box-shadow: 0 5px 15px goldenrod;
+    }
+    50% {
+      color: blue;
+      box-shadow: 0 5px 15px blue;
+    }
+    75% {
+      color: rgb(35, 201, 201);
+      box-shadow: 0 5px 15px rgb(35, 201, 201);
+    }
+    100% {
+      color: red;
+      box-shadow: 0 5px 15px red;
+    }
+  }
+  .heading{
+    text-align:center;
+    font-weight:100;
+  }
+  .keyboard__body {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #40514E;
+    border-radius: 15px;
+  }
+  .key {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F3F6F6;
+  }
+  .key:active {
+    transform: translateY(2px);
+    box-shadow: 0 0px 0px transparent;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .spaceBar {
+    width: 500px;
+  }
+  .spaceBar:active {
+    transform: translateY(2px);
+  }
+  .text {
+    margin: 0 auto;
+    width: 500px;
+    display: block;
+    margin-bottom: 50px;
+    border: 2px solid lime;
+  }
+  .text:focus {
+    outline: none;
+  }
+  .lightOn {
+    animation: lights 8s linear infinite;
+  }
+  
