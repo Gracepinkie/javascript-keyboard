@@ -52,16 +52,7 @@ const caps = function () {
     checkCaps = false;
   }
 };
-//Lights
-const blink = function () {
-  if (checkLights == false) {
-    key.forEach((key) => key.classList.add('lightOn'));
-    checkLights = true;
-  } else {
-    key.forEach((key) => key.classList.remove('lightOn'));
-    checkLights = false;
-  }
-};
+
 //Event listener
 container.addEventListener('click', function (e) {
   if (e.target.classList.contains('key')) {
